@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( face-detection )
+find_package( OpenCV REQUIRED )
+add_executable( face-detection face-detection.py )
+target_link_libraries( face-detection ${OpenCV_LIBS} )
